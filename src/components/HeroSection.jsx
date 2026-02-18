@@ -13,6 +13,15 @@ const HeroSection = () => {
 
             {/* Content Container */}
             <div className="relative z-10 container mx-auto px-4 text-center">
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8 }}
+                    className="mb-8"
+                >
+                    <img src="/images/Large Logo.png" alt="Seagrass Guardian Logo" className="w-48 md:w-64 mx-auto drop-shadow-2xl" />
+                </motion.div>
+
                 <motion.h1
                     className="text-5xl md:text-7xl font-bold mb-6 text-teal-100 text-shadow"
                     initial={{ opacity: 0, y: -20 }}
